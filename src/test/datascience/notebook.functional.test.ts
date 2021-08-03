@@ -1059,21 +1059,23 @@ plt.show()`,
 
             class DyingProcess implements ChildProcess {
                 public readonly exitCode: number | null = null;
-                public readonly signalCode: number | null = null;
+                public readonly signalCode: NodeJS.Signals | null = null;
                 public stdin: Writable;
                 public stdout: Readable;
                 public stderr: Readable;
-                public stdio: [Writable, Readable, Readable];
+                public stdio: ChildProcess['stdio'];
                 public killed: boolean = false;
                 public pid: number = 1;
                 public connected: boolean = true;
+                public spawnargs: string[] = [];
+                public spawnfile: string = '';
                 constructor(private timeout: number) {
                     noop();
                     this.stderr = this.stdout = new Readable();
                     this.stdin = new Writable();
-                    this.stdio = [this.stdin, this.stdout, this.stderr];
+                    this.stdio = [this.stdin, this.stdout, this.stderr] as any;
                 }
-                public kill(_signal?: string): void {
+                public kill(_signal?: NodeJS.Signals | number): boolean {
                     throw new Error('Method not implemented.');
                 }
                 public send(_message: any, _sendHandle?: any, _options?: any, _callback?: any): any {

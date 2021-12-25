@@ -2162,7 +2162,7 @@
         "rxjs-compat": "^6.5.4",
         "sanitize-filename": "^1.6.3",
         "semver": "^5.5.0",
-        "slickgrid": "^2.4.17",
+        "slickgrid": "^2.4.43",
         "stack-trace": "0.0.10",
         "string-argv": "^0.3.1",
         "strip-ansi": "^5.2.0",

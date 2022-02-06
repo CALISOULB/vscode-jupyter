@@ -4,3 +4,6 @@ numpy
 matplotlib
 pandas
 livelossplot
+ipython>=7.16.3 # not directly required, pinned by Snyk to avoid a vulnerability
+notebook>=6.1.5 # not directly required, pinned by Snyk to avoid a vulnerability
+pygments>=2.7.4 # not directly required, pinned by Snyk to avoid a vulnerability

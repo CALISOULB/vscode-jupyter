@@ -10,3 +10,6 @@ py4j
 bqplot
 K3D
 ipyleaflet
+ipython>=7.16.3 # not directly required, pinned by Snyk to avoid a vulnerability
+pillow>=9.0.1 # not directly required, pinned by Snyk to avoid a vulnerability
+pygments>=2.7.4 # not directly required, pinned by Snyk to avoid a vulnerability

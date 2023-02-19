@@ -10,3 +10,4 @@ py4j
 bqplot
 K3D
 ipyleaflet
+numpy>=1.22.2 # not directly required, pinned by Snyk to avoid a vulnerability

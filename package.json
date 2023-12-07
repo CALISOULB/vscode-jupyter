@@ -2169,7 +2169,7 @@
         "styled-components": "^5.2.1",
         "svg-inline-react": "^3.1.0",
         "svg-to-pdfkit": "^0.1.8",
-        "tcp-port-used": "^1.0.1",
+        "tcp-port-used": "^1.0.2",
         "tmp": "^0.0.29",
         "typescript-char": "^0.0.0",
         "uint64be": "^1.0.1",

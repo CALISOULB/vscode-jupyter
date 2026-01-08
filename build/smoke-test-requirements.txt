@@ -4,3 +4,4 @@ numpy
 matplotlib
 pandas
 livelossplot
+bokeh>=3.8.2 # not directly required, pinned by Snyk to avoid a vulnerability

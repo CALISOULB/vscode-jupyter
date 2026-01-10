@@ -10,3 +10,5 @@ py4j
 bqplot
 K3D
 ipyleaflet
+bokeh>=3.8.2 # not directly required, pinned by Snyk to avoid a vulnerability
+urllib3>=2.6.3 # not directly required, pinned by Snyk to avoid a vulnerability
